@@ -116,7 +116,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script>
-  const chatSocket = new WebSocket("ws://" + window.location.host + "/");
+  const chatSocket = new WebSocket("wss://" + window.location.host + "/");
   chatSocket.onopen = function (e) {
     console.log("The connection was set up successfully!");
   };
