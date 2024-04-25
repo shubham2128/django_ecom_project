@@ -8,8 +8,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0#k1c6s6rhmj+%g6)3_w2101(-m^8=9&$vwk3d5gnex!ub!#^l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-# ALLOWED_HOSTS = ['djangoecom.azurewebsites.net']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['djangoecom.azurewebsites.net']
+# ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
