@@ -3,15 +3,15 @@ from .settings import *
 from .settings import BASE_DIR
 
 SECRET_KEY = 'GwsJbrEbUy'
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
 print(ALLOWED_HOSTS)
-CSRF_TRUSTED_ORIGINS = ['https://*.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://'+os.environ['WEBSITE_HOSTNAME']]
 DEBUG = True
 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoise.Middleware',
+    'whitenoise.middleware.WhiteNoise.Middleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
