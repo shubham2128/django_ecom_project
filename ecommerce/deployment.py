@@ -5,7 +5,7 @@ from .settings import BASE_DIR
 SECRET_KEY = os.environ['SECRET']
 ALLOWED_HOSTS = ['djangoecom.azurewebsites.net']
 print(ALLOWED_HOSTS)
-CSRF_TRUSTED_ORIGINS = ['https//djangoecom.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://djangoecom.azurewebsites.net']
 DEBUG = True
 
 
