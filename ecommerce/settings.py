@@ -15,6 +15,9 @@ CORS_ORIGIN_ALLOW_ALL = True
 CSRF_TRUSTED_ORIGINS = ['https://*.azurewebsites.net']
 
 
+
+
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
